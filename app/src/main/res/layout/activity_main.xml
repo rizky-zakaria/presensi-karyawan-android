@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+
+    <RelativeLayout
+        android:background="@color/design_default_color_primary"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/namaApk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:text="Presensi-Karyawan"
+            android:textColor="#FFF"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/profile"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/hello"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:text="Selamat Datang, Nama Anda"
+        android:layout_marginTop="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_below="@id/hello"
+        android:layout_marginLeft="25dp"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/dtng"
+        android:text="Silahkan Absen Kehadiran Datang:"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:layout_below="@id/dtng"
+        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/btn_datang"
+        android:text="Absen Datang"
+        android:id="@+id/btn_datang"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+
+    <TextView
+        android:layout_below="@id/btn_datang"
+        android:layout_marginLeft="25dp"
+        android:id="@+id/plng"
+        android:text="Silahkan Absen Kehadiran Pulang:"
+        android:layout_marginTop="35dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageButton
+        android:src="@drawable/ic_baseline_arrow_back_ios_24"
+        android:layout_below="@id/plng"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/btn_pulang"
+        android:text="Absen Pulang"
+        android:id="@+id/btn_pulang"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+
+    <Button
+        android:id="@+id/laporkan"
+        android:background="@drawable/bg_input"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:text="Laporkan Pekerjaan"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"/>
+
+</RelativeLayout>

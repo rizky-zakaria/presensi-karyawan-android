@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Presensi-Karyawan</string>
+    <string name="url">http://10.10.10.8/presensi-karyawan/index.php/</string>
+</resources>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_login">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="username"
+            android:padding="12dp"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bg_input"
+            android:hint="password"
+            android:padding="12dp"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/btn_masuk"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_below="@id/password"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/bg_input"
+            android:text="Masuk" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

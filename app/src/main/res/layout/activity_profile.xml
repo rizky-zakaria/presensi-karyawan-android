@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_profile"
+        android:background="@drawable/bg_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:src="@drawable/ic_baseline_account_circle_24"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_width="75dp"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFF"
+            android:textSize="25sp"
+            android:id="@+id/username"
+            android:text="Nama Anda"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:text="Nama"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:id="@+id/nama"
+        android:layout_below="@id/rl_profile"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Jabatan"
+        android:textSize="25sp"
+        android:id="@+id/jabatan"
+        android:textColor="#000"
+        android:layout_below="@id/nama"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tgl_lahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jabatan"
+        android:textColor="#000"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="Tanggal Lahir"
+        android:textSize="25sp" />
+
+    <TextView
+        android:text="Alamat"
+        android:textSize="25sp"
+        android:id="@+id/alamat"
+        android:layout_below="@id/tgl_lahir"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Jenis Kelamin"
+        android:id="@+id/jk"
+        android:textSize="25sp"
+        android:layout_below="@id/alamat"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="#000"
+        android:layout_marginRight="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/no_telp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jk"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:text="Nomor Telepon"
+        android:textColor="#000"
+        android:textSize="25sp" />
+
+    <Button
+        android:text="Logout"
+        android:id="@+id/logout"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/bg_input"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"/>
+
+</RelativeLayout>
